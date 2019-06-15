@@ -3,6 +3,7 @@ import json
 import datetime
 from util.settings import Settings
 from .util import check_folder
+from util.database import Database
 
 
 class Datasaver:
@@ -13,9 +14,12 @@ class Datasaver:
                 "%Y-%m-%d %H-%M-%S") + '.json')
         else:
             file_profile = os.path.join(Settings.profile_location, username + '.json')
-
+        client = Database()
         with open(file_profile, 'w') as fp:
             fp.write(json.dumps(information, indent=4))
+            print(information)
+            client.insert(information)
+
 
     def save_profile_commenters_txt(username, user_commented_list):
         check_folder(Settings.profile_commentors_location)

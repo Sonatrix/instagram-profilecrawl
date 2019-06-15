@@ -31,6 +31,8 @@ class Settings:
     login_username = ''
     login_password = ''
 
+    MONGO_URI = "mongodb://localhost/profiles"
+
     #chromedriver
     chromedriver_min_version = 2.36
     specific_chromedriver = "chromedriver_{}".format(OS_ENV)
