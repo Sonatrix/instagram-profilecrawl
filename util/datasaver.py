@@ -17,7 +17,6 @@ class Datasaver:
         client = Database()
         with open(file_profile, 'w') as fp:
             fp.write(json.dumps(information, indent=4))
-            print(information)
             client.insert(information)
 
 

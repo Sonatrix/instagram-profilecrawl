@@ -31,7 +31,7 @@ class Settings:
     login_username = ''
     login_password = ''
 
-    MONGO_URI = "mongodb://localhost/profiles"
+    MONGO_URI = "mongodb://localhost/instagram-analytics"
 
     #chromedriver
     chromedriver_min_version = 2.36

@@ -94,3 +94,9 @@ virtualenv/
 
 # Rope project settings
 .ropeproject
+
+#node modules
+server/node_modules/
+
+#states csv
+states.csv
