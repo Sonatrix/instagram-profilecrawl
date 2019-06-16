@@ -6,7 +6,9 @@ const processRoutes = require('./process');
 
 module.exports = function(app) {
    
-  // Add routes for use 
+  app.get('/', function (req, res) {
+    res.render('index', { title: 'Hey', message: 'Hello there!' })
+  })
 
   app.use('/insta-profile', userRoutes);
   

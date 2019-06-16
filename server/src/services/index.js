@@ -1,1 +1,2 @@
-require('./process');
+const { addProfileToCron }= require('./process');
+addProfileToCron();

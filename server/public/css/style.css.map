@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./index.vue"],"names":[],"mappings":"AAoCA;EAEQ,eAAe;EACf,iBAAiB;AAAA","file":"style.css","sourcesContent":["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nbody {\n    #app {\n        font-size: 16px;\n        font-weight: bold;\n    }\n}\n"],"sourceRoot":""}
